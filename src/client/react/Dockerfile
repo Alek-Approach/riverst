@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install deps (use npm ci if you have a lockfile)
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 
 # Copy the rest
 COPY . .
